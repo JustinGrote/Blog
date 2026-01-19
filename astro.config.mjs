@@ -8,10 +8,10 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://posh.guru",
-  integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
-  output: "server",
-  adapter: cloudflare({
-    imageService: 'compile'
-  }),
+	site: "https://posh.guru",
+	integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
+	output: "static",
+	// adapter: cloudflare({
+	//   imageService: 'compile'
+	// }),
 })
